@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    /* font-family: 'Pacifico', cursive; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.dotter-hr {
+
+    border: 2px dotted white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 100px;
+}
+
+header {
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.navbar {
+    background-color: #435988;
+    padding: 1% 5%;
+    text-align: center;
+
+
+}
+
+.navbar::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.navbar .navbar-logo img {
+    width: 85px;
+    height: 85px;
+}
+
+.navbar-header h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.navbar-manu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.navbar-manu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    background-color: #648fb3;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.navbar-manu a:hover {
+    background-color: gainsboro;
+}
+
+/* start profile sectiom */
+.profile {
+    background-image: url(imeag/prodile-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+
+.profile {
+    text-align: center;
+    padding-top: 16%;
+}
+
+.profile-desc h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+}
+
+.profile-desc p {
+    color: rgb(198, 201, 197);
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.profile button {
+    padding: 20px 30px;
+    background-image: linear-gradient(rgb(177, 55, 55), rgb(177, 123, 74), rgb(138, 32, 64));
+    border: none;
+    border-radius: 8px;
+    box-shadow: 4px 5px 14px whitesmoke;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.profile button:hover {
+    padding: 23px 32px;
+}
+
+/* end profile sectiom */
+
+/* start about me sectiom */
+
+.about-me {
+    background-color: #435988;
+    padding: 1% 5%;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.about-me::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+
+.about-me .about-img img {
+    width: 100%;
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 490px;
+}
+
+.about-disc p {
+    text-align: center;
+
+}
+
+.about-disc a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.about-disc .cv {
+    background-color: #438388;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #be5353;
+    box-shadow: 4px 5px 12px white;
+}
+
+/* end about me sectiom */
+
+/* start professional-experience*/
+.professional-expreance {
+    padding: 1% 0%;
+}
+
+.card-icon {
+    text-align: center;
+}
+
+.card .card-icon img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border: 5px solid rgb(206, 130, 43);
+    border-radius: 50%;
+    box-shadow: 0 2px 3px 5px rgb(230, 149, 74);
+
+
+}
+
+.card-title h2 {
+    background-color: #778a8d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.professional-expreance .card {
+    background-color: #d0dddf;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 700px;
+}
+
+.professional-expreance .card:hover {
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.professional-expreance::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.skills-contaner {
+    padding-right: 45px;
+
+}
+
+.skills-contaner li {
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+}
+
+.skills-contaner li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #bea1da;
+    border-radius: 1000px;
+}
+
+.skills-contaner li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 80%;
+    }
+
+}
+
+.skills-contaner li.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 50%
+    }
+}
+
+.skills-contaner li.js::after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 1%
+    }
+}
+
+.skills-contaner li.c::after {
+    animation-name: c;
+}
+
+@keyframes c {
+    to {
+        width: 65%
+    }
+}
+
+.skills-contaner li.cpp::after {
+    animation-name: cpp;
+}
+
+@keyframes cpp {
+    to {
+        width: 40%
+    }
+}
+
+.skills-contaner li.python::after {
+    animation-name: python;
+}
+
+@keyframes python {
+    to {
+        width: 20%
+    }
+}
+
+.skills-contaner li::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: #331c72;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/* start professional-experience*/
+
+/* start my work  */
+
+.my-work {
+    background-color: #435988;
+}
+
+.my-work .work-title {
+    text-align: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.my-work .works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+}
+
+.my-work .works div {
+    padding: 20px;
+    width: 100%;
+}
+
+.my-work .works div iframe {
+    width: 100%;
+}
+
+/* end my work  */
+
+/* start contact section  */
+
+.contacts {
+    margin-top: 30px;
+    padding: 1% 7%;
+    background-color: #435988;
+    color: #FFFFFF;
+}
+
+.contacts::after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.contacts h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.contacts fieldset>legend {
+    font-size: 1.3rem;
+}
+
+
+.contact-me input,
+textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 9px;
+    resize: none;
+}
+
+input::placeholder {
+    color: #d8d2d2;
+
+}
+
+textarea::placeholder {
+    color: #d8d2d2;
+
+}
+
+.contact-me button {
+    border: none;
+    border-radius: 10px;
+    background-color: #55016e;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+
+}
+
+.contact-link {
+    text-align: center;
+}
+
+.contact-link h3 {
+    text-align: center;
+}
+
+.midea-button .btn {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+}
+
+.midea-button .btn:hover {
+    background-color: gray;
+}
+
+/* end contact section  */
+/* start footer section  */
+footer {
+    background-color: black;
+    color: #FFFFFF;
+    height: 150px;
+    text-align: center;
+
+
+}
+
+footer>div {
+    padding-top: 50px;
+}
+
+/* end footer section  */
